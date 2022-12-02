@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.escolha {
+    display: flex;
+}
+.opcao {
+    width: 80px;
+    background-color: #999;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.opcao:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.jogo {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+}
+
+.quadro {
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease .5s;
+}
+
+.quadro:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.esquerda {
+    border-right: 0;
+}
+
+.baixo {
+    border-bottom: 0;
+}
+
+
+
+.model {
+    display: none;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.x {
+    display: block;
+    position: absolute;
+    margin-left: -120px;
+}
+.diagonal--1 {
+    width: 120px;
+    height: 3px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: absolute;
+} 
+.diagonal--2 {
+    width: 120px;
+    height: 3px;
+    background-color: #fff;
+    transform: rotate(-45deg);   
+    position: absolute; 
+} 
+
+
+.linha--vencedora {   
+    display:none;
+    position: absolute;
+    height: 5px;
+    background-color: #0f0;
+}
+.linha--vencedora.vertical1 {
+    display:none;
+    width: 600px;
+    margin-top: -300px;
+    margin-left: -200px;
+    transform: rotate(90deg);
+}
+.linha--vencedora.vertical2 {
+    display:none;
+    width: 600px;
+    margin-top: -300px;
+    transform: rotate(90deg);
+}
+.linha--vencedora.vertical3 {
+    display:none;
+    width: 600px;
+    margin-top: -300px;
+    margin-left: 200px;
+    transform: rotate(90deg);
+}
+
+.linha--vencedora.horizontal1 {
+    display:none;
+    width: 600px;
+    margin-top: -500px;    
+}
+.linha--vencedora.horizontal2 {
+    display:none;
+    width: 600px;
+    margin-top: -300px;    
+}
+.linha--vencedora.horizontal3 {
+    display:none;
+    width: 600px;
+    margin-top: -100px;    
+}
+
+.linha--vencedora.transversalse {
+    display:none;
+    width: 849px;
+    transform: rotate(45deg);
+    margin-left: -120px;
+    margin-top: -300px;
+}
+.linha--vencedora.transversalne {
+    display:none;
+    width: 849px;
+    transform: rotate(-45deg);
+    margin-left: -130px;
+    margin-top: -300px;
+}
+
+.resultado{
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: 250px;    
+    background: rgba(255, 255, 0, 0.8);
+    padding-bottom: 10px;
+    width: 600px;
+}
+
+.vencedor {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;    
+    font-weight: bold;
+    color: #000;
+}
+
+.jogar--novamente {
+    padding: 10px;
+}
