@@ -2,7 +2,8 @@ Primeiro projeto colocado no GitHub, ainda estou aprendendo, então relevem algu
 
 JOGO DA VELHA
 
-Escolha entre "O" e "X". O VENCEDOR será o jogador que conseguir fazer uma sequência de 3 do mesmo símbolo na horizontal, vertical ou transversal, caso não seja possível irá dar EMPATE!
+Escolha entre "O" e "X". 
+O VENCEDOR será o jogador que conseguir fazer uma sequência de 3 do mesmo símbolo na horizontal, vertical ou transversal, caso não seja possível irá dar EMPATE!
 O jogo foi criado para jogar em 2 pessoas.
 
 Contatos:
